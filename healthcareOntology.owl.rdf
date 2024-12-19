@@ -1,0 +1,149 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/mdiab1/ontologies/2024/11/untitled-ontology-5/"
+     xml:base="http://www.semanticweb.org/mdiab1/ontologies/2024/11/untitled-ontology-5/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/mdiab1/ontologies/2024/11/untitled-ontology-5"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/mdiab1/ontologies/2024/11/untitled-ontology-5#hasCause -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mdiab1/ontologies/2024/11/untitled-ontology-5#hasCause">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mdiab1/ontologies/2024/11/untitled-ontology-5#Disease"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/mdiab1/ontologies/2024/11/untitled-ontology-5#Cause"/>
+        <rdfs:comment>&lt;Disease:HeartDisease&gt; &lt;hasCause&gt; &lt;Cause:Smoking&gt; .</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mdiab1/ontologies/2024/11/untitled-ontology-5#hasDisease -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mdiab1/ontologies/2024/11/untitled-ontology-5#hasDisease">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mdiab1/ontologies/2024/11/untitled-ontology-5#Patient"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/mdiab1/ontologies/2024/11/untitled-ontology-5#Disease"/>
+        <rdfs:comment>&lt;Person:John&gt; &lt;hasDisease&gt; &lt;Disease:Flu&gt; .</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mdiab1/ontologies/2024/11/untitled-ontology-5#hasSymptom -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mdiab1/ontologies/2024/11/untitled-ontology-5#hasSymptom">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mdiab1/ontologies/2024/11/untitled-ontology-5#Disease"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/mdiab1/ontologies/2024/11/untitled-ontology-5#Symptom"/>
+        <rdfs:comment>&lt;Disease:Flu&gt; &lt;hasSymptom&gt; &lt;Symptom:Fever&gt; .</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mdiab1/ontologies/2024/11/untitled-ontology-5#hasTreatment -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mdiab1/ontologies/2024/11/untitled-ontology-5#hasTreatment">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mdiab1/ontologies/2024/11/untitled-ontology-5#Disease"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/mdiab1/ontologies/2024/11/untitled-ontology-5#Treatment"/>
+        <rdfs:comment>&lt;Disease:Flu&gt; &lt;hasTreatment&gt; &lt;Treatment:AntiviralMedication&gt; .</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/mdiab1/ontologies/2024/11/untitled-ontology-5#Cause -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mdiab1/ontologies/2024/11/untitled-ontology-5#Cause">
+        <rdfs:comment>Cause refers to any factor, condition, or agent that leads to, initiates, or contributes to the occurrence of a disease, condition, or disorder. It explains why or how a particular health condition occurs. Causes can be biological, environmental, genetic, or behavioral in nature. The concept of a &quot;cause&quot; is important for understanding the underlying mechanisms of diseases and conditions.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mdiab1/ontologies/2024/11/untitled-ontology-5#Diagnosis -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mdiab1/ontologies/2024/11/untitled-ontology-5#Diagnosis">
+        <rdfs:comment>Diagnosis is the process of identifying a disease, condition, or injury based on the symptoms, signs, medical history, and diagnostic tests. It is a critical step in healthcare to determine the appropriate treatment and management plan for a patient.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mdiab1/ontologies/2024/11/untitled-ontology-5#Disease -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mdiab1/ontologies/2024/11/untitled-ontology-5#Disease">
+        <rdfs:comment>A disease is a condition that disrupts the normal functioning of the body or mind, typically characterized by specific signs and symptoms. Diseases can affect physical health, mental health, or both, and they may be caused by a variety of factors</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mdiab1/ontologies/2024/11/untitled-ontology-5#Event -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mdiab1/ontologies/2024/11/untitled-ontology-5#Event">
+        <rdfs:comment>An event typically refers to an occurrence or happening that is described by a set of properties and relations. It is often represented as an entity in ontologies to capture dynamic aspects of the world, such as actions, processes, or changes that involve various participants and have a specific outcome.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mdiab1/ontologies/2024/11/untitled-ontology-5#Patient -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mdiab1/ontologies/2024/11/untitled-ontology-5#Patient">
+        <rdfs:comment>A patient is an individual who receives medical care or treatment from healthcare professionals such as doctors, nurses, or therapists. Patients may seek care for various reasons</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mdiab1/ontologies/2024/11/untitled-ontology-5#Prevention -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mdiab1/ontologies/2024/11/untitled-ontology-5#Prevention">
+        <rdfs:comment>Prevention refers to actions and strategies aimed at reducing the risk of developing diseases, injuries, or health conditions. It focuses on maintaining health and avoiding the occurrence or worsening of illnesses. Prevention is an essential component of public health and personal well-being.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mdiab1/ontologies/2024/11/untitled-ontology-5#Symptom -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mdiab1/ontologies/2024/11/untitled-ontology-5#Symptom">
+        <rdfs:comment>Symptoms are the physical or mental changes experienced by an individual that indicate the presence of a disease, condition, or injury. Symptoms can vary widely depending on the underlying issue and can range from mild and temporary to severe and chronic.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mdiab1/ontologies/2024/11/untitled-ontology-5#Treatment -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mdiab1/ontologies/2024/11/untitled-ontology-5#Treatment">
+        <rdfs:comment>Treatment refers to the medical care or interventions provided to manage, cure, or alleviate a disease, condition, or injury. The goal of treatment is to improve a patient&apos;s health, quality of life, and overall well-being.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mdiab1/ontologies/2024/11/untitled-ontology-5#Triple -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mdiab1/ontologies/2024/11/untitled-ontology-5#Triple">
+        <rdfs:comment>A triple is a fundamental unit of information, represented as a subject-predicate-object structure. It is the building block of RDF (Resource Description Framework), which is widely used for structuring data in ontologies.</rdfs:comment>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+
